@@ -3,7 +3,8 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     url(r'^$', 'lists.views.home_page', name='home'),
-    url(r'^lists/mylist/$', 'lists.views.view_list', name='view_list')
+    url(r'^lists/mylist/$', 'lists.views.view_list', name='view_list'),
+    url(r'^lists/new$', 'lists.views.new_list', name='new_list'),
 
     # url(r'^admin/', include(admin.site.urls)),
 )
